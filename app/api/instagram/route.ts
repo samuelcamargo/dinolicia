@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 
+// Forçar rota dinâmica na Vercel
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 interface InstagramPost {
   id: string;
   url: string;
